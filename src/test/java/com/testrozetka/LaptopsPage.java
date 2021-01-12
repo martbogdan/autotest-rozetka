@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 
 public class LaptopsPage {
     private static final String URL = "https://rozetka.com.ua/ua/notebooks/c80004/";
-    private static final long WAIT_TIME_OUT_IN_SECONDS = 20;
+    private static final long WAIT_TIME_OUT_IN_SECONDS = 60;
 
     private final WebDriver driver;
     private final WebDriverWait wait;

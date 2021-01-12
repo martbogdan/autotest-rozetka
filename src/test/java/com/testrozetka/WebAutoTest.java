@@ -30,7 +30,7 @@ public class WebAutoTest extends WebDriverSettings {
         laptopsPage
                 .getLaptopsPage()
                 .fillLowPrice(3500)
-                .fillHighPrice(80000)
+                .fillHighPrice(30000)
                 .submitPriceForm()
                 .openAllItemsOnOnePage();
 
@@ -41,6 +41,6 @@ public class WebAutoTest extends WebDriverSettings {
         System.out.println("Max price: " + integers.stream().mapToInt(Integer::intValue).max());
         System.out.println("Min price: " + integers.stream().mapToInt(Integer::intValue).min());
 
-        Assert.assertTrue(laptopsPage.checkPriceBoundary(3500, 80000, integers));
+        Assert.assertTrue(laptopsPage.checkPriceBoundary(3500, 30000, integers));
     }
 }

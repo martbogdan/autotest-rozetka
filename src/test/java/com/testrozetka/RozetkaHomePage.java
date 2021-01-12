@@ -23,7 +23,7 @@ public class RozetkaHomePage {
 
     private final By categoryLinkLocator = By.xpath("/html/body/app-root/div/div[1]/app-rz-main-page/div/aside/main-page-sidebar/sidebar-fat-menu/div/ul/li[1]");
     private final By laptopsLocator = By.xpath("/html/body/app-root/div/div[1]/rz-super-portal/div/main/section/div[2]/rz-dynamic-widgets/rz-widget-list[1]/section/ul/li[1]/rz-list-tile/div");
-    private final By laptopsLinkLocator = By.xpath("/html/body/app-root/div/div[1]/rz-super-portal/div/main/section/div[2]/rz-dynamic-widgets/rz-widget-list[1]/section/ul/li[1]");
+    private final By laptopsLinkLocator = By.xpath("/html/body/app-root/div/div[1]/app-rz-header/header/div/div[2]/div[1]/fat-menu/div/ul/li[1]/div/div[2]/div[1]/div[1]/ul[1]/li/a");
 
     @FindBy(xpath = "/html/body/app-root/div/div[1]/app-rz-main-page/div")
     private WebElement elementToHideCategoryList;
